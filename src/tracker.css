@@ -1,0 +1,52 @@
+.tracker{
+ width: 80%;
+ height: 80%;
+ border: 5px solid black;
+ border-radius: 2px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.ipbuttondiv{
+    text-align: center;
+}
+.ipbuttondiv button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border:2px solid blue;
+    margin: 2px;
+}
+#ipTracker{
+    border: 2px dotted brown;
+    text-align: center;
+    background-color: red;
+}
+#currentIp{
+    display: none;
+    text-align: center;
+}
+#advancedIp{
+    display: none;
+}
+#ipDisplay{
+    text-align: center;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate{
+    0%{
+      color: red;
+    }
+    50%{
+      opacity: yellow;
+    }
+    100%{
+      opacity:blue;
+    }
+}
+.footer{
+    width: 10%;
+    height: 4%;
+    margin-left: 90%;
+    margin-bottom: 2.5%;
+}
+

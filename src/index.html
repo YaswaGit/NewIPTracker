@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+    
+    
+</head>
+<body>
+    <div class="tracker">
+        <h1 id="ipTracker">IP Tracker</h1>
+        
+       <div class="ipbuttondiv">
+        <button class="btn btn-primary btn-lg btn-block" id="ipbutton" onclick="ipAddress()">Current IP Address</button>
+       </div>
+
+        <div id="currentIp">
+            <h3>Current IP Address</h3>
+            <h4 id="ipDisplay"></h4>
+        </div>
+
+        <div class="ipbuttondiv">
+            <button class="btn btn-secondary btn-lg btn-block" id="advancedbutton" onclick="advancedButton()">Advanced Info</button>
+        </div>
+        <div id="advancedIp">
+            <h3 class="advanced">Advanced Information</h3>
+            <div>
+                <ul>
+                    <li id="appv"></li>
+                    <li id="appc"></li>
+                    <li id="countryCode"></li>
+                    <li id="countryName"></li>
+                    <li id="state"></li>
+                    <li id="city"></li>
+                    <li id="postal"></li>
+                    <li id="latitude"></li>
+                    <li id="longitude"></li>
+                    <form name="myform">
+                        <input id="ipinput" type="text" value=""> 
+                        <input class="btn btn-success btn-lg btn-block" type="button" value="IP Info" onclick="getFullIpLocation(document.getElementById('ipinput').value);"> 
+                    </form>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button class="printButton" onclick="printPage()">Print</button>
+        </div>
+    </div>
+
+    <script src="tracker.js"></script>
+</body>
+</html>
